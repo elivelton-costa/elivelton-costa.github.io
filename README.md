@@ -155,4 +155,4 @@ Este projeto é de código aberto e pode ser usado livremente para fins educacio
 
 ---
 
-**Criado com ❤️ por Elivelton Costa usando HTML, Tailwind CSS, JavaScript, Node.js, WLS e Cursor**
+**Criado com ❤️ por Elivelton Costa usando HTML, Tailwind CSS, JavaScript, Node.js, WSL e Cursor**
