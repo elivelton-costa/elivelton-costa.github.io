@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elivelton Costa | Portfólio</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Script -->
+    <script src="js/script.js" defer></script>
+    
+</head>
+<body class="antialiased">
+
+    <!-- Cabeçalho / Navegação -->
+    <header id="header" class="glass-effect fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <!-- Logo e Nome -->
+            <a href="#hero" class="flex items-center space-x-3">
+                <img src="https://github.com/elivelton-costa.png" alt="Foto de Elivelton Costa" class="rounded-full w-8 h-8 md:w-10 md:h-10 object-cover shadow-lg">
+                <span class="text-white hidden md:inline">Oi, sou o <span class="text-blue-500 font-bold">Eli</span>!</span>
+            </a>
+            
+            <!-- Navegação Desktop -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="#hero" class="text-gray-300 hover:text-blue-400 transition-colors duration-300">Início</a>
+                <a href="#about" class="text-gray-300 hover:text-blue-400 transition-colors duration-300">Sobre</a>
+                <!-- <a href="#projects" class="text-gray-300 hover:text-blue-400 transition-colors duration-300">Projetos</a> -->
+                <a href="#skills" class="text-gray-300 hover:text-blue-400 transition-colors duration-300">Habilidades</a>
+                <a href="#contact" class="text-gray-300 hover:text-blue-400 transition-colors duration-300">Contato</a>
+            </nav>
+
+            <!-- Botão do Menu Móvel -->
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <!-- Menu Móvel -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#hero" class="block py-2 px-6 text-sm text-gray-300 hover:bg-gray-700">Início</a>
+            <a href="#about" class="block py-2 px-6 text-sm text-gray-300 hover:bg-gray-700">Sobre</a>
+            <!-- <a href="#projects" class="block py-2 px-6 text-sm text-gray-300 hover:bg-gray-700">Projetos</a> -->
+            <a href="#skills" class="block py-2 px-6 text-sm text-gray-300 hover:bg-gray-700">Habilidades</a>
+            <a href="#contact" class="block py-2 px-6 text-sm text-gray-300 hover:bg-gray-700">Contato</a>
+        </div>
+    </header>
+
+    <!-- Seção Hero -->
+    <section id="hero" class="min-h-screen flex items-center bg-gray-900">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4">
+                Olá, eu sou o <span class="text-blue-500">Elivelton Costa</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-400 mb-8 h-8">
+                 <span id="typing-text"></span><span class="blinking-cursor"></span>
+            </p>
+            <div class="flex justify-center space-x-4">
+                <!-- <a href="#projects" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-transform transform hover:scale-105 duration-300">
+                    Meus Projetos
+                </a> -->
+                <a href="https://drive.google.com/file/d/1HmqqXMJwJiBX4k3iycGgpktHqlfQt3cS/view" target="_blank" download class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded-lg transition-transform transform hover:scale-105 duration-300">
+                    Baixar CV
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre Mim -->
+    <section id="about" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-white">Sobre Mim</h2>
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/3">
+                    <img src="https://github.com/elivelton-costa.png" alt="Foto de Elivelton Costa" class="rounded-full w-64 h-64 md:w-80 md:h-80 mx-auto object-cover border-2 border-blue-500 shadow-lg">
+                </div>
+                <div class="md:w-2/3 text-lg text-gray-300 text-center md:text-left">
+                    <p class="mb-4">
+                        Olá! Sou Elivelton, um profissional com anos de experiência em Tecnologia da Informação. Minha paixão é melhorar processos e soluções existente. Além de transformar ideias em realidade, seja através de código, infraestrutura de redes ou suporte técnico.
+                    </p>
+                    <p class="mb-4">
+                        Ao longo da minha trajetória profissional, tive a oportunidade de atuar em empresas dos setores de varejo, telecomunicações, combustíveis e em instituições públicas. Essas experiências aprimoraram minhas habilidades em análise e resolução de problemas, redes, desenvolvimento, segurança da informação e sustentação de sistemas.
+                    </p>
+                    <p>
+                        Quando não estou trabalhando, gosto de maratonar filmes e séries, cozinhar, rever os amigos ou explorar as últimas tendências em tecnologia.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Projetos -->
+     <!--
+    <section id="projects" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-white">Meus Projetos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                
+                <div class="glass-effect rounded-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 shadow-lg">
+                    <img src="https://placehold.co/600x400/1f2937/ffffff?text=Projeto+1" alt="Imagem do Projeto 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Nome do Projeto 1</h3>
+                        <p class="text-gray-400 mb-4">Uma breve descrição do projeto, as tecnologias usadas e o objetivo principal.</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-blue-400 hover:text-blue-300 font-semibold">Ver Demo <i class="fas fa-external-link-alt ml-1"></i></a>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 font-semibold">GitHub <i class="fab fa-github ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="glass-effect rounded-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 shadow-lg">
+                    <img src="https://placehold.co/600x400/1f2937/ffffff?text=Projeto+2" alt="Imagem do Projeto 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Nome do Projeto 2</h3>
+                        <p class="text-gray-400 mb-4">Uma breve descrição do projeto, as tecnologias usadas e o objetivo principal.</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-blue-400 hover:text-blue-300 font-semibold">Ver Demo <i class="fas fa-external-link-alt ml-1"></i></a>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 font-semibold">GitHub <i class="fab fa-github ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="glass-effect rounded-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 shadow-lg">
+                    <img src="https://placehold.co/600x400/1f2937/ffffff?text=Projeto+3" alt="Imagem do Projeto 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Nome do Projeto 3</h3>
+                        <p class="text-gray-400 mb-4">Uma breve descrição do projeto, as tecnologias usadas e o objetivo principal.</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-blue-400 hover:text-blue-300 font-semibold">Ver Demo <i class="fas fa-external-link-alt ml-1"></i></a>
+                            <a href="#" class="text-blue-400 hover:text-blue-300 font-semibold">GitHub <i class="fab fa-github ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Seção de Habilidades -->
+    <section id="skills" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-white">Minhas Habilidades</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 text-center">
+                
+                <!-- Cartões de Habilidades -->
+                <div class="skill-card p-4 bg-gray-700 rounded-lg flex flex-col items-center justify-center transition-all duration-300 transform hover:scale-110">
+                    <i class="fas fa-headset text-5xl text-teal-400 mb-2"></i>
+                    <span class="skill-name font-semibold text-white">Suporte Técnico</span>
+                </div>
+                <div class="skill-card p-4 bg-gray-700 rounded-lg flex flex-col items-center justify-center transition-all duration-300 transform hover:scale-110">
+                    <i class="fas fa-server text-5xl text-blue-300 mb-2"></i>
+                    <span class="skill-name font-semibold text-white">Redes</span>
+                </div>
+                <div class="skill-card p-4 bg-gray-700 rounded-lg flex flex-col items-center justify-center transition-all duration-300 transform hover:scale-110">
+                    <i class="fas fa-shield-halved text-5xl text-blue-300 mb-2"></i>
+                    <span class="skill-name font-semibold text-white">InfoSec</span>
+                </div>
+                    <div class="skill-card p-4 bg-gray-700 rounded-lg flex flex-col items-center justify-center transition-all duration-300 transform hover:scale-110">
+                    <i class="fab fa-git-alt text-5xl text-red-500 mb-2"></i>
+                    <span class="skill-name font-semibold text-white">Git</span>
+                </div>
+                <div class="skill-card p-4 bg-gray-700 rounded-lg flex flex-col items-center justify-center transition-all duration-300 transform hover:scale-110">
+                    <i class="fas fa-database text-5xl text-gray-400 mb-2"></i>
+                    <span class="skill-name font-semibold text-white">SQL</span>
+                </div>
+                <div class="skill-card p-4 bg-gray-700 rounded-lg flex flex-col items-center justify-center transition-all duration-300 transform hover:scale-110">
+                    <i class="fab fa-html5 text-5xl text-orange-500 mb-2"></i>
+                    <span class="skill-name font-semibold text-white">HTML5</span>
+                </div>
+                <div class="skill-card p-4 bg-gray-700 rounded-lg flex flex-col items-center justify-center transition-all duration-300 transform hover:scale-110">
+                    <i class="fab fa-css3-alt text-5xl text-blue-500 mb-2"></i>
+                    <span class="skill-name font-semibold text-white">CSS3</span>
+                </div>
+                <div class="skill-card p-4 bg-gray-700 rounded-lg flex flex-col items-center justify-center transition-all duration-300 transform hover:scale-110">
+                    <i class="fab fa-python text-5xl text-blue-400 mb-2"></i>
+                    <span class="skill-name font-semibold text-white">Python</span>
+                </div>
+                <div class="skill-card p-4 bg-gray-700 rounded-lg flex flex-col items-center justify-center transition-all duration-300 transform hover:scale-110">
+                    <i class="fab fa-js-square text-5xl text-yellow-400 mb-2"></i>
+                    <span class="skill-name font-semibold text-white">JavaScript</span>
+                </div>
+                <!-- Adicione mais habilidades conforme necessário -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contact" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-white">Entre em Contato</h2>
+            <p class="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
+                Estou sempre aberto a novas oportunidades e colaborações. Sinta-se à vontade para entrar em contato comigo.
+            </p>
+            <a href="mailto:elivelton_costa@live.com" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold text-xl py-4 px-8 rounded-lg transition-transform transform hover:scale-105 duration-300">
+                Mande um E-mail
+            </a>
+            <div class="mt-12 flex justify-center space-x-6">
+                <a href="https://github.com/elivelton-costa" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors duration-300">
+                    <i class="fab fa-github text-4xl"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/elivelton-costa/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors duration-300">
+                    <i class="fab fa-linkedin text-4xl"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-gray-900 py-6">
+        <div class="container mx-auto px-6 text-center text-gray-400">
+            <p>&copy; <span id="year"></span> Elivelton Costa. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
