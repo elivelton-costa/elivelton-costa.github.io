@@ -18,7 +18,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
 
 // Animação digitando
 document.addEventListener('DOMContentLoaded', () => {
-    const typingElement = document.getElementById('typing-text');
+    const typingElement = document.getElementById('digitando');
     const phrase = "Sou um Analista de TI curioso por novas tecnologias...";
     let charIndex = 0;
     const typingSpeed = 85;
@@ -30,7 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(typeWriter, typingSpeed);
         }
     }
-    
     // Inicia a animação após um breve atraso
     setTimeout(typeWriter, 1000);
 });
