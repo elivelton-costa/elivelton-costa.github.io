@@ -1,7 +1,5 @@
 # Portfólio Pessoal - Elivelton Costa
 
-Portfólio profissional responsivo criado com HTML, Tailwind CSS e JavaScript.
-
 ## 📁 Estrutura do Projeto
 
 ```
