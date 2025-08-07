@@ -5,13 +5,18 @@ Portfólio profissional responsivo criado com HTML, Tailwind CSS e JavaScript.
 ## 📁 Estrutura do Projeto
 
 ```
-portfolio/
-├── index.html          # Página principal do portfólio
+elivelton-costa.github.io/
+├── index.html              # Página principal do portfólio
 ├── css/
-│   └── styles.css      # Estilos personalizados
+│   ├── styles.css          # Arquivo fonte com diretivas Tailwind + estilos customizados
+│   └── tailwind.css        # CSS otimizado para produção (14KB)
 ├── js/
-│   └── script.js       # Funcionalidades JavaScript
-└── README.md           # Este arquivo
+│   └── script.js           # Funcionalidades JavaScript
+├── image/
+│   ├── avatar_Eli.png      # Avatar do perfil
+│   └── favicon.ico         # Ícone do site
+├── .gitignore              # Arquivos ignorados pelo Git
+└── README.md               # Este arquivo
 ```
 
 ## 🚀 Como Usar
@@ -19,15 +24,9 @@ portfolio/
 1. **Abra o arquivo `index.html`** em qualquer navegador web
 2. **Ou use um servidor local** para melhor experiência:
    ```bash
-   # Com Python 3
-   python3 -m http.server 8000
-   
-   # Com Node.js (se tiver instalado)
+   # Com Node.js
    npx serve .
    
-   # Com PHP
-   php -S localhost:8000
-   ```
 
 ## ✨ Funcionalidades
 
@@ -65,6 +64,7 @@ portfolio/
 - **Font Awesome** - Ícones profissionais
 - **Google Fonts** - Tipografia Inter
 - **CSS Animations** - Animações nativas
+- **Node.js** - Build tool para otimização do CSS
 
 ## 📋 Seções da Página
 
@@ -92,7 +92,7 @@ O projeto usa um tema escuro moderno com:
 - **Atualize informações pessoais** (nome, descrição, links)
 
 ### Dependências Externas
-- **Tailwind CSS CDN** - Framework CSS
+- **Tailwind CSS** - Framework CSS
 - **Font Awesome CDN** - Ícones
 - **Google Fonts** - Tipografia Inter
 
@@ -114,8 +114,8 @@ O projeto usa um tema escuro moderno com:
 
 ## 📈 Performance
 
-- **Tailwind CSS** otimizado via CDN
-- **Font Awesome** carregado via CDN
+- **Tailwind CSS** otimizado para produção (14KB vs 3MB do CDN)
+
 - **Google Fonts** com preconnect
 - **Animações CSS** nativas
 - **Código modular** e reutilizável
