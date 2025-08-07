@@ -25,3 +25,8 @@ body {
     from, to { background-color: transparent }
     50% { background-color: #3b82f6; }
 }
+
+/* Tailwind CSS directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
